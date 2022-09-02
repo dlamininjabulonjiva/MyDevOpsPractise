@@ -17,7 +17,7 @@ public class TestHelloController
         const string expected = "Hello Bob";
 
         // Act
-        var result = controller.Get("Bobb");
+        var result = controller.Get("Bob");
 
         // Assert
         Assert.AreEqual(expected, result);
