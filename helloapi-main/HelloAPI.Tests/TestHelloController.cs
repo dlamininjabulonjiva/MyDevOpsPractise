@@ -14,7 +14,7 @@ public class TestHelloController
         // Arrange
         var logger = Substitute.For<ILogger<HelloController>>();
         var controller = new HelloController(logger);
-        var expected = "Hello Bob";
+        const string expected = "Hello Bob";
 
         // Act
         var result = controller.Get("Bob");
